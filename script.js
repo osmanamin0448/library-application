@@ -1,19 +1,6 @@
 /* =====  Array to store books ===== */
 const myLibrary = [];
 
-/* ===== Creates Book ===== */
-// function Book(title,author, pages, read){
-//   this.id = crypto.randomUUID();
-//   this.title = title;
-//   this.author = author;
-//   this.pages = pages;
-//   this.read = read;
-// }
-
-// Book.prototype.setReadStatus = function(){
-//   this.read = !this.read;
-// }
-
 class Book{
   constructor(title, author, pages, read){
     this.id = crypto.randomUUID();
@@ -118,7 +105,7 @@ form.addEventListener("submit", (event) => {
   const title = document.querySelector("#title").value;
   const author = document.querySelector("#author").value;
   const pages = document.querySelector("#pages").value
-  const read = document.querySelector("#read").value;
+  const read = document.querySelector("#read").checked;
 
   addBookToLibrary(title, author, pages, read);
 

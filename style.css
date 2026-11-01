@@ -95,8 +95,8 @@ button:hover{
 }
 
 .shelve{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 350px));
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 10px;
 }
